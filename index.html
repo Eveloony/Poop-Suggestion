@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+    <head>
+    <title>Evelyn's Poop Suggestions For You</title>
+  </head>
+<body style="background-color:white;">
+  <h1>Poop Suggestions</h1>
+  <h3>Evelyn has prepared your daily pooping suggestion</h3>
+
+  <form>
+  <label for="poop-time">Time</label><br>
+  <input type="time" placeholder="Input a time" id="poop-time" name="poop-time"><br>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="poopNo">Times Pooped:</label><br>
+  <input type="text" id="poops" name="poops">
+</form>
+<br>
+  <button onclick="getSuggestion()">GO</button>
+  <p>
+    Based on your input, Evelyn suggests that you do the following:
+</p>
+</body>
+<script>
+ function getSuggestion() {
+ let variable1 =fname.value+" "+lname.value  + "<br>" + " Times Pooped: " + poops.value + "<br>" + "Time of Day:" + document.getElementById("poop-time").value + "<br>" + "Based on this, Evelyn suggests the following";
+document.write(variable1);
+ }
+</script>
+</html>
